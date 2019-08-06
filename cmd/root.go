@@ -38,11 +38,15 @@ func init() {
 	// init config
 	cfg = config.New()
 
+	// silence on the root cmd
+	RootCmd.SilenceErrors = true
+	RootCmd.SilenceUsage = true
+
 	// initialize cobra
 	cobra.OnInitialize(initConfig)
 
-	// adding flags
-	addFlags(RootCmd, cfg)
+	// Adding sub-commands ...
+	RootCmd.AddCommand(CreateBot)
 }
 
 // initConfig reads in config file and ENV variables if set.

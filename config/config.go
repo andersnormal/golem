@@ -51,7 +51,7 @@ const (
 	DefaultVerbose = false
 
 	// DefaultAddr is the default addrs to listen on
-	DefaultAddr = ":443"
+	DefaultAddr = ""
 
 	// DefaultDebug is the default debug status.
 	DefaultDebug = false

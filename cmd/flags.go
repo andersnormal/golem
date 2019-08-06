@@ -13,6 +13,6 @@ func addFlags(cmd *cobra.Command, cfg *c.Config) {
 	// enable debug options
 	cmd.Flags().BoolVar(&cfg.Debug, "debug", c.DefaultDebug, "enable debug")
 
-	// addr to listen on
-	cmd.Flags().StringVar(&cfg.Addr, "addr", c.DefaultAddr, "address to listen")
+	// addr to connect to
+	cmd.Flags().StringVar(&cfg.Addr, "addr", c.DefaultAddr, "address of the Xcode server")
 }
