@@ -1,0 +1,8 @@
+version: 1
+author: Sebastian Döll <sebastian@andersnormal.us>
+project: golem
+tasks:
+  build:
+    desc: building
+    cmds:
+      - go build
